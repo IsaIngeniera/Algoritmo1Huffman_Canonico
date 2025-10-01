@@ -5,11 +5,11 @@ set(CMAKE_CXX_STANDARD 20)
 
 # Lista de todos los archivos .cpp
 add_executable(untitled3
-        main.cpp
-        ArbolHuffman.cpp
-        CompresorHuffman.cpp
-        HuffmanCanonico.cpp
-        InfoCodigo.cpp
-        NodoComparador.cpp
-        NodoHuffman.cpp
+        src/main.cpp
+        src/ArbolHuffman.cpp
+        src/CompresorHuffman.cpp
+        src/HuffmanCanonico.cpp
+        extra/InfoCodigo.cpp
+        src/NodoComparador.cpp
+        src/NodoHuffman.cpp
 )

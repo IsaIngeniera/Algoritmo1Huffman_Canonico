@@ -1,7 +1,7 @@
 //
 // Created by DevCore on 1/10/2025.
 //
-#include "HuffmanCanonico.h"
+#include "../include/HuffmanCanonico.h"
 #include <algorithm>
 #include <iostream>
 #include <iomanip>
@@ -85,8 +85,8 @@ const std::unordered_map<char, std::string>& HuffmanCanonico::obtenerCodigosCano
 
 void HuffmanCanonico::imprimirTablaCodigos(const std::vector<InfoCodigo>& infos,
                                            const std::unordered_map<char, int>& frecuencias) const {
-    std::cout << "\n╔════════════════════════════════════════════════════════════════════════╗\n";
-    std::cout << "║                    TABLA DE CÓDIGOS HUFFMAN                            ║\n";
+    std::cout<<"\n╔══════════════════════════════════════════════════════════════════════╗\n";
+    std::cout << "║                    TABLA DE CÓDIGOS HUFFMAN                          ║\n";
     std::cout << "╠═══════════╦══════════╦══════════╦═════════════════╦══════════════════╣\n";
     std::cout << "║  Símbolo  ║   Freq   ║ Longitud ║  Código Árbol   ║ Código Canónico  ║\n";
     std::cout << "╠═══════════╬══════════╬══════════╬═════════════════╬══════════════════╣\n";

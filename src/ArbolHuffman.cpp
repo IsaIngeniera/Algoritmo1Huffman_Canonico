@@ -2,8 +2,8 @@
 // Created by DevCore on 1/10/2025.
 //
 
-#include "ArbolHuffman.h"
-#include "NodoComparador.h"
+#include "../include/ArbolHuffman.h"
+#include "../include/NodoComparador.h"
 #include <queue>
 #include <iostream>
 #include <iomanip>

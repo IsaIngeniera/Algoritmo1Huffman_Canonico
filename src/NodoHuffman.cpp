@@ -2,7 +2,7 @@
 // Created by DevCore on 1/10/2025.
 //
 
-#include "NodoHuffman.h"
+#include "../include/NodoHuffman.h"
 
 NodoHuffman::NodoHuffman(char sim, int freq)
     : simbolo(sim), frecuencia(freq), izquierdo(nullptr), derecho(nullptr) {}

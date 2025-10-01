@@ -2,7 +2,7 @@
 // Created by DevCore on 1/10/2025.
 //
 
-#include "CompresorHuffman.h"
+#include "../include/CompresorHuffman.h"
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -10,7 +10,7 @@
 void CompresorHuffman::comprimir(const std::string& texto) {
     textoOriginal = texto;
 
-    std::cout << "\n╔════════════════════════════════════════════════════════════╗\n";
+    std::cout<<"\n╔════════════════════════════════════════════════════════════╗\n";
     std::cout << "║         INICIANDO COMPRESIÓN HUFFMAN CANÓNICA              ║\n";
     std::cout << "╚════════════════════════════════════════════════════════════╝\n";
 
@@ -91,13 +91,13 @@ std::string CompresorHuffman::bitsAHexadecimal(const std::string& bits) const {
 }
 
 void CompresorHuffman::mostrarResultados() const {
-    std::cout << "\n╔════════════════════════════════════════════════════════════╗\n";
+    std::cout<<"\n╔════════════════════════════════════════════════════════════╗\n";
     std::cout << "║                  RESULTADO DE COMPRESIÓN                   ║\n";
     std::cout << "╚════════════════════════════════════════════════════════════╝\n";
 
     std::cout << "\nTexto original:\n\"" << textoOriginal << "\"\n";
 
-    std::cout << "\nPrimeros 128 bits del texto comprimido:\n";
+    std::cout << "\nPrimeros bits del texto comprimido:\n";
     std::string primeros128 = textoCodificado.substr(0, std::min(size_t(128), textoCodificado.length()));
 
     // Mostrar en grupos de 8 bits
@@ -126,16 +126,16 @@ void CompresorHuffman::mostrarEstadisticas() const {
     double ratio = static_cast<double>(tamanoComprimido) / tamanoOriginal;
     double reduccion = (1.0 - ratio) * 100.0;
 
-    std::cout << "\n╔════════════════════════════════════════════════════════════╗\n";
-    std::cout << "║                  ESTADÍSTICAS DE COMPRESIÓN                ║\n";
-    std::cout << "╠════════════════════════════════════════════════════════════╣\n";
-    std::cout << "║  Tamaño original:      " << std::setw(6) << tamanoOriginal << " bits ("
-              << textoOriginal.length() << " caracteres)     ║\n";
-    std::cout << "║  Tamaño comprimido:    " << std::setw(6) << tamanoComprimido << " bits"
-              << std::string(24, ' ') << "║\n";
-    std::cout << "║  Ratio de compresión:  " << std::fixed << std::setprecision(4) << ratio
-              << std::string(29, ' ') << "║\n";
-    std::cout << "║  Reducción:            " << std::fixed << std::setprecision(2) << reduccion
-              << " %" << std::string(27, ' ') << "║\n";
-    std::cout << "╚════════════════════════════════════════════════════════════╝\n";
+    std::cout<<"\n══════════════════════════════════════════════════════════════\n";
+    std::cout << "                  ESTADÍSTICAS DE COMPRESIÓN                  \n";
+    std::cout << "══════════════════════════════════════════════════════════════\n";
+    std::cout << "  Tamaño original:      " << std::setw(6) << tamanoOriginal << " bits ("
+              << textoOriginal.length() << " caracteres)\n";
+    std::cout << "  Tamaño comprimido:    " << std::setw(6) << tamanoComprimido << " bits"
+              << std::string(24, ' ') << "\n";
+    std::cout << "  Ratio de compresión:  " << std::fixed << std::setprecision(4) << ratio
+              << std::string(29, ' ') << "\n";
+    std::cout << "  Reducción:            " << std::fixed << std::setprecision(2) << reduccion
+              << " %" << std::string(27, ' ') << "\n";
+    std::cout << "══════════════════════════════════════════════════════════════\n";
 }

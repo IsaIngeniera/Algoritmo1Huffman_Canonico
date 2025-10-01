@@ -1,4 +1,4 @@
-#include "CompresorHuffman.h"
+#include "../include/CompresorHuffman.h"
 #include <iostream>
 #include <string>
 #include <locale>
@@ -16,20 +16,8 @@ void configurarConsola() {
     std::locale::global(std::locale(""));
 }
 
-void mostrarBanner() {
-    std::cout << "\n";
-    std::cout << "╔══════════════════════════════════════════════════════════════════╗\n";
-    std::cout << "║                                                                  ║\n";
-    std::cout << "║        COMPRESOR HUFFMAN CANÓNICO - VERSIÓN 2.0                  ║\n";
-    std::cout << "║                                                                  ║\n";
-    std::cout << "║  Algoritmos y Estructuras de Datos                               ║\n";
-    std::cout << "║  Escuela de Ciencias Aplicadas e Ingeniería                      ║\n";
-    std::cout << "║                                                                  ║\n";
-    std::cout << "╚══════════════════════════════════════════════════════════════════╝\n";
-}
-
 void mostrarMenu() {
-    std::cout << "\n┌──────────────────────────────────────────────────────────────┐\n";
+    std::cout<<"\n┌──────────────────────────────────────────────────────────────┐\n";
     std::cout << "│                         MENÚ PRINCIPAL                       │\n";
     std::cout << "├──────────────────────────────────────────────────────────────┤\n";
     std::cout << "│  1. Comprimir texto nuevo                                    │\n";
@@ -41,8 +29,8 @@ void mostrarMenu() {
 }
 
 void mostrarInformacion() {
-    std::cout << "\n╔══════════════════════════════════════════════════════════════════╗\n";
-    std::cout << "║            ¿QUÉ ES LA CODIFICACIÓN HUFFMAN CANÓNICA?            ║\n";
+    std::cout<<"\n╔══════════════════════════════════════════════════════════════════╗\n";
+    std::cout << "║            ¿QUÉ ES LA CODIFICACIÓN HUFFMAN CANÓNICA?             ║\n";
     std::cout << "╚══════════════════════════════════════════════════════════════════╝\n\n";
 
     std::cout << "La codificación Huffman Canónica es una variante del algoritmo de\n";
@@ -66,9 +54,9 @@ void mostrarInformacion() {
 
 std::string obtenerTextoUsuario() {
     std::string texto;
-    std::cout << "\n┌──────────────────────────────────────────────────────────────┐\n";
-    std::cout << "│                    ENTRADA DE TEXTO                          │\n";
-    std::cout << "└──────────────────────────────────────────────────────────────┘\n";
+    std::cout<<"\n┌────────────────────────────────────────────────────────────────┐\n";
+    std::cout << "│                    ENTRADA DE TEXTO                            │\n";
+    std::cout << "└────────────────────────────────────────────────────────────────┘\n";
     std::cout << "\nIngrese el texto a comprimir (mínimo 30 caracteres):\n";
     std::cout << "→ ";
 
@@ -85,14 +73,13 @@ std::string obtenerTextoUsuario() {
 }
 
 std::string obtenerTextoEjemplo() {
-    std::cout << "\n┌──────────────────────────────────────────────────────────────┐\n";
-    std::cout << "│                    TEXTOS DE EJEMPLO                         │\n";
-    std::cout << "├──────────────────────────────────────────────────────────────┤\n";
-    std::cout << "│  1. Texto con muchos espacios                                │\n";
-    std::cout << "│  2. Texto con pocos símbolos distintos                       │\n";
-    std::cout << "│  3. Texto con distribución uniforme                          │\n";
-    std::cout << "│  4. Texto en español con acentos                             │\n";
-    std::cout << "└──────────────────────────────────────────────────────────────┘\n";
+    std::cout <<"\n────────────────────────────────────────────────────────────\n";
+    std::cout << "                     TEXTOS DE EJEMPLO                         \n";
+        std::cout << "────────────────────────────────────────────────────────────\n";
+        std::cout << "  1. Texto con muchos espacios                              \n";
+        std::cout << "  2. Texto con pocos símbolos distintos                     \n";
+        std::cout << "  3. Texto con distribución uniforme                        \n";
+        std::cout << "────────────────────────────────────────────────────────────\n";
     std::cout << "\nSeleccione un ejemplo: ";
 
     int opcion;
@@ -101,13 +88,11 @@ std::string obtenerTextoEjemplo() {
 
     switch (opcion) {
         case 1:
-            return "Este    es    un    texto    con    muchos    espacios    para    probar    la    compresión";
+            return "isa     y      lau      prueban      el      codigo";
         case 2:
-            return "aaaaaaaaaa bbbbbbbbbb cccccccccc dddddddddd eeeeeeeeee";
+            return "isalauisalauisalauisalauisalauisalauisalauisalauisa";
         case 3:
             return "abcdefghijklmnopqrstuvwxyz 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        case 4:
-            return "La programación es una habilidad esencial en la era digital. Los algoritmos de compresión son fundamentales.";
         default:
             return "Este es un texto de ejemplo para demostrar la compresión Huffman Canónica en acción.";
     }
@@ -115,8 +100,6 @@ std::string obtenerTextoEjemplo() {
 
 int main() {
     configurarConsola();
-    mostrarBanner();
-
     bool continuar = true;
 
     while (continuar) {

@@ -49,47 +49,47 @@ cmake_ninja_workdir = D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Al
 
 build cmake_object_order_depends_target_untitled3: phony || .
 
-build CMakeFiles/untitled3.dir/main.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/main.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\main.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/main.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/main.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
-build CMakeFiles/untitled3.dir/ArbolHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/ArbolHuffman.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\ArbolHuffman.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/ArbolHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/ArbolHuffman.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\ArbolHuffman.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
-build CMakeFiles/untitled3.dir/CompresorHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/CompresorHuffman.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\CompresorHuffman.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/CompresorHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/CompresorHuffman.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\CompresorHuffman.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
-build CMakeFiles/untitled3.dir/HuffmanCanonico.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/HuffmanCanonico.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\HuffmanCanonico.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/HuffmanCanonico.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/HuffmanCanonico.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\HuffmanCanonico.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
-build CMakeFiles/untitled3.dir/InfoCodigo.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/InfoCodigo.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\InfoCodigo.cpp.obj.d
+build CMakeFiles/untitled3.dir/extra/InfoCodigo.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/extra/InfoCodigo.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\extra\InfoCodigo.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\extra
 
-build CMakeFiles/untitled3.dir/NodoComparador.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/NodoComparador.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\NodoComparador.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/NodoComparador.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/NodoComparador.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\NodoComparador.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
-build CMakeFiles/untitled3.dir/NodoHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/NodoHuffman.cpp || cmake_object_order_depends_target_untitled3
-  DEP_FILE = CMakeFiles\untitled3.dir\NodoHuffman.cpp.obj.d
+build CMakeFiles/untitled3.dir/src/NodoHuffman.cpp.obj: CXX_COMPILER__untitled3_unscanned_Debug D$:/@ISABELLA/@EAFIT/@SEMESTRE$ 3/Estructura$ Datos$ y$ Algoritmos/untitled3/src/NodoHuffman.cpp || cmake_object_order_depends_target_untitled3
+  DEP_FILE = CMakeFiles\untitled3.dir\src\NodoHuffman.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\untitled3.dir
-  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled3.dir\src
 
 
 # =============================================================================
@@ -99,7 +99,7 @@ build CMakeFiles/untitled3.dir/NodoHuffman.cpp.obj: CXX_COMPILER__untitled3_unsc
 #############################################
 # Link the executable untitled3.exe
 
-build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/main.cpp.obj CMakeFiles/untitled3.dir/ArbolHuffman.cpp.obj CMakeFiles/untitled3.dir/CompresorHuffman.cpp.obj CMakeFiles/untitled3.dir/HuffmanCanonico.cpp.obj CMakeFiles/untitled3.dir/InfoCodigo.cpp.obj CMakeFiles/untitled3.dir/NodoComparador.cpp.obj CMakeFiles/untitled3.dir/NodoHuffman.cpp.obj
+build untitled3.exe: CXX_EXECUTABLE_LINKER__untitled3_Debug CMakeFiles/untitled3.dir/src/main.cpp.obj CMakeFiles/untitled3.dir/src/ArbolHuffman.cpp.obj CMakeFiles/untitled3.dir/src/CompresorHuffman.cpp.obj CMakeFiles/untitled3.dir/src/HuffmanCanonico.cpp.obj CMakeFiles/untitled3.dir/extra/InfoCodigo.cpp.obj CMakeFiles/untitled3.dir/src/NodoComparador.cpp.obj CMakeFiles/untitled3.dir/src/NodoHuffman.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled3.dir
