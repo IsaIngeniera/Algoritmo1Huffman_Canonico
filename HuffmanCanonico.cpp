@@ -14,10 +14,45 @@ bool HuffmanCanonico::compararInfoCodigo(const InfoCodigo& a, const InfoCodigo& 
 }
 
 std::string HuffmanCanonico::intABinario(int valor, int longitud) const {
-    std::string resultado = "";
-    for (int i = longitud - 1; i >= 0; i--) {
-        resultado += ((valor >> i) & 1) ? '1' : '0';
+    std::string temporal = "";
+    int valorCopia = valor;
+
+    // si el valor es 0
+    if (valorCopia == 0) {
+        temporal = "0";
+    } else {
+        //convertir el número a binario (sale al revés)
+        while (valorCopia > 0) {
+            if (valorCopia % 2 == 1) {
+                temporal += '1';
+            } else {
+                temporal += '0';
+            }
+            valorCopia /= 2;
+        }
     }
+
+    //  Revertimos y rellenamos con ceros para asegurar la longitud
+    std::string resultado = "";
+
+    // Rellenar con ceros a la izquierda, si es necesario
+    int cerosFaltantes = longitud - temporal.length();
+
+    // Un bucle for simple para rellenar
+    for (int i = 0; i < cerosFaltantes; i++) {
+        resultado += '0';
+    }
+
+    // Revertir la cadena temporal 
+    for (int i = temporal.length() - 1; i >= 0; i--) {
+        resultado += temporal[i];
+    }
+
+    // Manejo de error
+    if (resultado.length() > longitud) {
+        resultado = resultado.substr(resultado.length() - longitud);
+    }
+
     return resultado;
 }
 
