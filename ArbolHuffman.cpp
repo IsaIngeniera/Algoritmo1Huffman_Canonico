@@ -72,9 +72,17 @@ void ArbolHuffman::generarCodigos(NodoHuffman* nodo, std::string codigo) {
 
 std::vector<InfoCodigo> ArbolHuffman::obtenerInformacionCodigos() const {
     std::vector<InfoCodigo> infos;
+    // Se recorre el mapa de códigos
     for (const auto& par : codigosArbol) {
-        infos.push_back(InfoCodigo(par.first, par.second.length(), par.second));
+        char simbolo = par.first;
+        std::string codigo = par.second;
+        int longitud = codigo.length();
+
+        // Se crea el objeto y se añade
+        InfoCodigo info(simbolo, longitud, codigo);
+        infos.push_back(info);
     }
+
     return infos;
 }
 
