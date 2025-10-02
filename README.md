@@ -40,7 +40,7 @@ Criterios de desempate:
 - Implementado en `NodoComparador`: primero compara frecuencias, luego símbolos
 
 Estructuras de datos utilizadas:
-- `std::priority_queue: con comparador personalizado (min-heap) para construir el árbol de Huffman
+- `std::priority_queue`: con comparador personalizado (min-heap) para construir el árbol de Huffman
 - `std::unordered_map<char, int>`: para almacenar frecuencias de caracteres
 - `std::unordered_map<char, std::string>`: para mapear símbolos a códigos binarios
 - `std::vector<InfoCodigo>`: para ordenar y generar códigos canónicos
