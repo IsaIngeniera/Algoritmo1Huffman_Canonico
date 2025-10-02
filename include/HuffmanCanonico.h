@@ -4,7 +4,7 @@
 #ifndef HUFFMANCANONICO_H
 #define HUFFMANCANONICO_H
 
-#include "../extra/InfoCodigo.h"
+#include "../Informacion/InfoCodigo.h"
 #include <vector>
 #include <unordered_map>
 #include <string>

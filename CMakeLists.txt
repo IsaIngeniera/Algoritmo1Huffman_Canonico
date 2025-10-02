@@ -9,7 +9,7 @@ add_executable(untitled3
         src/ArbolHuffman.cpp
         src/CompresorHuffman.cpp
         src/HuffmanCanonico.cpp
-        extra/InfoCodigo.cpp
+        Informacion/InfoCodigo.cpp
         src/NodoComparador.cpp
         src/NodoHuffman.cpp
 )

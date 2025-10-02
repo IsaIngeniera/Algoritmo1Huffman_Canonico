@@ -6,7 +6,7 @@
 #define ARBOLHUFFMAN_H
 
 #include "NodoHuffman.h"
-#include "../extra/InfoCodigo.h"
+#include "../Informacion/InfoCodigo.h"
 #include <unordered_map>
 #include <vector>
 #include <string>
