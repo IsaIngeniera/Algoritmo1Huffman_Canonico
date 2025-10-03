@@ -8,7 +8,7 @@
  - Isabella Ocampo Sánchez. (iocampos1@eafit.edu.co
 
 ### *Video del código* 
-(https://www.youtube.com/watch?v=XpH3RBngGq0)
+(https://youtu.be/czhViP-jCCo)
 
 ##### Plataforma y herramientas utilizadas
 > Clion 2024.3.5.
